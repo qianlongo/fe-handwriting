@@ -19,21 +19,31 @@ const instanceOf2 = (obj, func) => {
     return false
   }
 
-  let proto = Object.getPrototypeOf(obj)
+  let proto = obj
 
-  while (true) {
+  while (proto = Object.getPrototypeOf(proto)) {
     if (proto === null) {
       return false
     } else if (proto === func.prototype) {
       return true
-    } else {
-      proto = Object.getPrototypeOf(proto)
     }
   }
+
+  return false
+
+  // while (true) {
+  //   if (proto === null) {
+  //     return false
+  //   } else if (proto === func.prototype) {
+  //     return true
+  //   } else {
+  //     proto = Object.getPrototypeOf(proto)
+  //   }
+  // }
 }
 
 
-let Fn = function () {}
+let Fn = function () { }
 let p1 = new Fn()
 
 console.log(instanceOf1({}, Object))
