@@ -6,7 +6,7 @@
 
 **2021-07-19** setTimeout-setInterval、setInterval-setTimeout、call
 
-**2021-07-20** apply、promise.all、promise
+**2021-07-20** apply、promise.all、promise.race
 
 **2021-07-21** 
 
