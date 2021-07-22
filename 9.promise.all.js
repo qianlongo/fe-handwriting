@@ -5,7 +5,7 @@ Promise.myAll = (promises) => {
     const len = promises.length
 
     promises.forEach((p, i) => {
-      p.then((res) => {
+      Promise.resolve(p).then((res) => {
         count += 1
         result[ i ] = res
         
@@ -31,6 +31,12 @@ const p3 = new Promise((rs, rj) => {
 
 
 Promise.myAll([ p1, p2, p3 ]).then((res) => {
+  console.log(res)
+}).catch((err) => {
+  console.log('err', err)
+})
+
+Promise.myAll([ p1, p2, '---3' ]).then((res) => {
   console.log(res)
 }).catch((err) => {
   console.log('err', err)
