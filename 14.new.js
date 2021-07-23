@@ -11,7 +11,15 @@ const _new = function (func, ...args) {
     throw 'func must be a function'
   }
   // 这里有点求快了，应该手动模拟一下
-  let obj = Object.create(func.prototype)
+  // let obj = Object.create(func.prototype)
+  // 实际模拟如下
+  let Ctor = function () {}
+
+  Ctor.prototype = func.prototype
+  Ctor.prototype.constructor = func
+
+  let obj = new Ctor()
+
   let result = func.apply(obj, args)
 
   if (typeof result === 'object' && result !== null || typeof result === 'function') {
@@ -20,3 +28,17 @@ const _new = function (func, ...args) {
     return obj
   }
 }
+
+let Person = function (name, sex) {
+  this.name = name
+  this.sex = sex
+}
+
+Person.prototype.showInfo = function () {
+  console.log(this.name, this.sex)
+}
+
+let p1 = _new(Person, 'qianlongo', 'sex')
+
+console.log(p1)
+
