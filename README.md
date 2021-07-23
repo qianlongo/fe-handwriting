@@ -10,7 +10,7 @@
 
 **2021-07-21** Promise、uniqueArray、trim 
 
-**2021-07-22** mobile-334、 new
+**2021-07-22** mobile-334、new、deepClone
 
 **2021-07-23** 计划实现深拷贝、函数节流、防抖
 
