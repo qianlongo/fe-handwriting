@@ -8,7 +8,7 @@
 
 **2021-07-20** apply、promise.all、promise.race
 
-**2021-07-21** Promise、uniqueArray、new 
+**2021-07-21** Promise、uniqueArray、trim 
 
 **2021-07-22**  
 
