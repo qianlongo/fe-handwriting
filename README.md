@@ -22,3 +22,4 @@
 
 ## 算法篇
 
+1. [快速排序](https://github.com/qianlongo/fe-handwriting/blob/master/17.quick-sort.js)
