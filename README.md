@@ -20,6 +20,7 @@
 
 ## 基础篇
 
-## 算法篇
+## 排序篇
 
 1. [快速排序](https://github.com/qianlongo/fe-handwriting/blob/master/17.quick-sort.js)
+2. [冒泡排序](https://github.com/qianlongo/fe-handwriting/blob/master/18.bubble-sort.js)

@@ -1,3 +1,4 @@
+// https://www.ruanyifeng.com/blog/2011/04/quicksort_in_javascript.html
 const quickSort = (array) => {
   const length = array.length
   if (length <= 1) {
