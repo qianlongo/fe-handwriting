@@ -41,3 +41,7 @@
 
 3. [两个数组的交集](https://github.com/qianlongo/fe-handwriting/blob/master/23.intersection.js)
 
+### 字符串
+
+1. [验证回文串](https://github.com/qianlongo/fe-handwriting/blob/master/24.valid-palindrome.js)
+
