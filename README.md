@@ -20,7 +20,7 @@
 
 **2021-07-26** 计划实现深拷贝、函数节流、防抖
 
-**2021-07-27** twoSum、
+**2021-07-27** twoSum、merge-sorted-array(两个有序数组合并)
 
 
 ## 基础篇
@@ -33,6 +33,8 @@
 4. [插入排序](https://github.com/qianlongo/fe-handwriting/blob/master/20.insert-sort.js)
 
 ## 算法篇
+
+### 数组
 
 1. [两数之和](https://github.com/qianlongo/fe-handwriting/blob/master/21.two-sum.js)
 1. [合并两个有序数组](https://github.com/qianlongo/fe-handwriting/blob/master/22.merge-sorted-array.js)
