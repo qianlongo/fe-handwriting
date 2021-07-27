@@ -20,7 +20,7 @@
 
 **2021-07-26** 计划实现深拷贝、函数节流、防抖
 
-**2021-07-27** twoSum(两数之和)、merge-sorted-array(两个有序数组合并)、intersection(两个数组的交集)
+**2021-07-27** twoSum(两数之和)、merge-sorted-array(两个有序数组合并)、intersection(两个数组的交集)、valid-palindrome（验证字符串是或否是回文）
 
 
 ## 基础篇
