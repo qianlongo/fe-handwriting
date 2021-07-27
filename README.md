@@ -37,4 +37,7 @@
 ### 数组
 
 1. [两数之和](https://github.com/qianlongo/fe-handwriting/blob/master/21.two-sum.js)
-1. [合并两个有序数组](https://github.com/qianlongo/fe-handwriting/blob/master/22.merge-sorted-array.js)
+2. [合并两个有序数组](https://github.com/qianlongo/fe-handwriting/blob/master/22.merge-sorted-array.js)
+
+3. [两个数组的交集](https://github.com/qianlongo/fe-handwriting/blob/master/23.intersection.js)
+
