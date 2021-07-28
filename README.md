@@ -22,6 +22,8 @@
 
 **2021-07-27** twoSum(两数之和)、merge-sorted-array(两个有序数组合并)、intersection(两个数组的交集)、valid-palindrome（验证字符串是或否是回文）
 
+**2021-07-27** valid-palindrome2(删除一个字符串，是否能成为回文)
+
 
 ## 基础篇
 
@@ -44,4 +46,5 @@
 ### 字符串
 
 1. [验证回文串](https://github.com/qianlongo/fe-handwriting/blob/master/24.valid-palindrome.js)
+1. [删除一个字符串，是否能成为回文](https://github.com/qianlongo/fe-handwriting/blob/master/25.valid-palindrome2.js)
 
