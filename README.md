@@ -27,6 +27,40 @@
 
 ## 基础篇
 
+1. [compose](https://github.com/qianlongo/fe-handwriting/blob/master/1.compose.js)
+
+2. [模拟instanceOf](https://github.com/qianlongo/fe-handwriting/blob/master/2.instanceOf.js)
+
+3. [多维数组拍平](https://github.com/qianlongo/fe-handwriting/blob/master/3.flat.js)
+
+4. [setTimeout模拟setInterval](https://github.com/qianlongo/fe-handwriting/blob/master/4.setTimeout-interval.js)
+
+5. [setInterval模拟setTimeout](https://github.com/qianlongo/fe-handwriting/blob/master/5.setInterval-timeout.js)
+
+6. [手写call](https://github.com/qianlongo/fe-handwriting/blob/master/6.call.js)
+
+7. [手写aplly](https://github.com/qianlongo/fe-handwriting/blob/master/7.apply.js)
+
+8. [数组去重](https://github.com/qianlongo/fe-handwriting/blob/master/8.uniqueArray.js)
+
+9. [实现一个Promise.all](https://github.com/qianlongo/fe-handwriting/blob/master/9.promise.all.js)
+
+10. [实现一个Promise.race](https://github.com/qianlongo/fe-handwriting/blob/master/10.promise.race.js)
+
+11. [手写Promise](https://github.com/qianlongo/fe-handwriting/blob/master/11.promise.js)
+
+12. [正则模拟实现trim方法](https://github.com/qianlongo/fe-handwriting/blob/master/12.trim.js)
+
+13. [手机号 3-3-4分割](https://github.com/qianlongo/fe-handwriting/blob/master/13.mobile-334.js)
+
+14. [手写一个new](https://github.com/qianlongo/fe-handwriting/blob/master/14.new.js)
+
+15. [手写一个深拷贝](https://github.com/qianlongo/fe-handwriting/blob/master/15.deepClone.js)
+
+
+
+
+
 ## 排序篇
 
 1. [快速排序](https://github.com/qianlongo/fe-handwriting/blob/master/17.quick-sort.js)
@@ -48,4 +82,8 @@
 1. [验证回文串](https://github.com/qianlongo/fe-handwriting/blob/master/24.valid-palindrome.js)
 1. [删除一个字符串，是否能成为回文](https://github.com/qianlongo/fe-handwriting/blob/master/25.valid-palindrome2.js)
 1. [添加与搜索单词 - 数据结构设计](https://github.com/qianlongo/fe-handwriting/blob/master/26.word-dictionary.js)
+
+### 链表
+
+1. [奇偶链表](https://github.com/qianlongo/fe-handwriting/blob/master/16.odd-even-linked-list.js)
 
