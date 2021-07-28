@@ -22,7 +22,7 @@
 
 **2021-07-27** twoSum(两数之和)、merge-sorted-array(两个有序数组合并)、intersection(两个数组的交集)、valid-palindrome（验证字符串是或否是回文）
 
-**2021-07-28** valid-palindrome2(删除一个字符串，是否能成为回文)
+**2021-07-28** valid-palindrome2(删除一个字符串，是否能成为回文)、word-dictionary（添加与搜索单词 - 数据结构设计）
 
 
 ## 基础篇
