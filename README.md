@@ -24,6 +24,8 @@
 
 **2021-07-28** valid-palindrome2(删除一个字符串，是否能成为回文)、word-dictionary（添加与搜索单词 - 数据结构设计） formatPrice(千分位格式化数字)
 
+**2021-07-29** remove-duplicates(删除有序数组的重复项)
+
 
 ## 基础篇
 
@@ -73,9 +75,12 @@
 ### 数组
 
 1. [两数之和](https://github.com/qianlongo/fe-handwriting/blob/master/21.two-sum.js)
+
 2. [合并两个有序数组](https://github.com/qianlongo/fe-handwriting/blob/master/22.merge-sorted-array.js)
 
 3. [两个数组的交集](https://github.com/qianlongo/fe-handwriting/blob/master/23.intersection.js)
+
+4. [删除有序数组的重复项](https://github.com/qianlongo/fe-handwriting/blob/master/28.remove-duplicates.js)
 
 ### 字符串
 
