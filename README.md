@@ -88,7 +88,7 @@
 
 6. [只出现一次的数字](https://github.com/qianlongo/fe-handwriting/blob/master/30.singleNumber.js)
 
-7. [只出现一次的数字](https://github.com/qianlongo/fe-handwriting/blob/master/31.contains-duplicate.js)
+7. [判断数组中是否有重复项](https://github.com/qianlongo/fe-handwriting/blob/master/31.contains-duplicate.js)
 
 ### 字符串
 
