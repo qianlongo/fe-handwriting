@@ -26,6 +26,8 @@
 
 **2021-07-29** remove-duplicates(删除有序数组的重复项)
 
+**2021-08-04** intersect2(两个数组之间的交集2)
+
 
 ## 基础篇
 
@@ -81,6 +83,8 @@
 3. [两个数组的交集](https://github.com/qianlongo/fe-handwriting/blob/master/23.intersection.js)
 
 4. [删除有序数组的重复项](https://github.com/qianlongo/fe-handwriting/blob/master/28.remove-duplicates.js)
+
+5. [两个数组之间的交集2](https://github.com/qianlongo/fe-handwriting/blob/master/29.intersect2.js)
 
 ### 字符串
 
