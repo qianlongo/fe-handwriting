@@ -26,7 +26,7 @@
 
 **2021-07-29** remove-duplicates(删除有序数组的重复项)
 
-**2021-08-04** intersect2(两个数组之间的交集2)
+**2021-08-04** intersect2(两个数组之间的交集2)、singleNumber(只出现一次的数字)
 
 
 ## 基础篇
@@ -85,6 +85,8 @@
 4. [删除有序数组的重复项](https://github.com/qianlongo/fe-handwriting/blob/master/28.remove-duplicates.js)
 
 5. [两个数组之间的交集2](https://github.com/qianlongo/fe-handwriting/blob/master/29.intersect2.js)
+
+6. [只出现一次的数字](https://github.com/qianlongo/fe-handwriting/blob/master/30.singleNumber.js)
 
 ### 字符串
 
