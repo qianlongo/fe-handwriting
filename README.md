@@ -28,6 +28,8 @@
 
 **2021-08-04** intersect2(两个数组之间的交集2)、singleNumber(只出现一次的数字)、containsDuplicate（给定一个整数数组，判断是否存在重复元素。）
 
+**2021-08-07** moveZeroes(移动零)
+
 
 ## 基础篇
 
@@ -89,6 +91,8 @@
 6. [只出现一次的数字](https://github.com/qianlongo/fe-handwriting/blob/master/30.singleNumber.js)
 
 7. [判断数组中是否有重复项](https://github.com/qianlongo/fe-handwriting/blob/master/31.contains-duplicate.js)
+
+7. [移动零](https://github.com/qianlongo/fe-handwriting/blob/master/32.move-zeroes.js)
 
 ### 字符串
 
