@@ -28,7 +28,7 @@
 
 **2021-08-04** intersect2(两个数组之间的交集2)、singleNumber(只出现一次的数字)、containsDuplicate（给定一个整数数组，判断是否存在重复元素。）
 
-**2021-08-07** moveZeroes(移动零)、reverseString(反转字符串)
+**2021-08-07** moveZeroes(移动零)、reverseString(反转字符串)、firstUniqChar（找到字符串中第一个不重复的值）
 
 
 ## 基础篇
@@ -103,6 +103,8 @@
 3. [添加与搜索单词 - 数据结构设计](https://github.com/qianlongo/fe-handwriting/blob/master/26.word-dictionary.js)
 
 4. [反转字符串](https://github.com/qianlongo/fe-handwriting/blob/master/33.reverse-string.js)
+
+5. [字符串中的第一个唯一字符](https://github.com/qianlongo/fe-handwriting/blob/master/34.first-uniq-char.js)
 
 ### 链表
 
