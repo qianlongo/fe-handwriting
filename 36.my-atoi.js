@@ -43,4 +43,23 @@ const myAtoi = (s) => {
   return result
 }
 
+const myAtoi2 = (s) => {
+  let result = parseInt(s)
+  const max = Math.pow(2, 31) - 1
+  const min = -max - 1
+
+  if (isNaN(result)) {
+    result = 0
+  } else {
+    if (result > max) {
+      result = max
+    } else if (result < min) {
+      result = min
+    }
+  }
+
+  return result
+}
+
 console.log(myAtoi("-91283472332"))
+console.log(myAtoi2("-91283472332"))
