@@ -30,7 +30,7 @@
 
 **2021-08-07** moveZeroes(移动零)、reverseString(反转字符串)、firstUniqChar（找到字符串中第一个不重复的值）、isAnagram（有效的字母异位词）
 
-**2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)、strStr() 函数、longestCommonPrefix(最长公共前缀)
+**2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)、strStr() 函数、longestCommonPrefix(最长公共前缀)、compareVersion（比较版本号）
 
 
 ## 基础篇
@@ -114,8 +114,9 @@
 
 7. [整数反转](https://github.com/qianlongo/fe-handwriting/blob/master/37.reverse-num.js)
 
-7. [实现 strStr() 函数。](https://github.com/qianlongo/fe-handwriting/blob/master/38.str-str.js)
-7. [最长公共前缀](https://github.com/qianlongo/fe-handwriting/blob/master/39.longest-common-prefix.js)
+8. [实现 strStr() 函数。](https://github.com/qianlongo/fe-handwriting/blob/master/38.str-str.js)
+9. [最长公共前缀](https://github.com/qianlongo/fe-handwriting/blob/master/39.longest-common-prefix.js)
+10. [比较版本号](https://github.com/qianlongo/fe-handwriting/blob/master/40.compare-version.js)
 
 ### 链表
 
