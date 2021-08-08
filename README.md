@@ -30,7 +30,7 @@
 
 **2021-08-07** moveZeroes(移动零)、reverseString(反转字符串)、firstUniqChar（找到字符串中第一个不重复的值）、isAnagram（有效的字母异位词）
 
-**2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)
+**2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)、strStr() 函数
 
 
 ## 基础篇
@@ -113,6 +113,8 @@
 6. [字符串转数字](https://github.com/qianlongo/fe-handwriting/blob/master/36.my-atoi.js)
 
 7. [整数反转](https://github.com/qianlongo/fe-handwriting/blob/master/37.reverse-num.js)
+
+7. [实现 strStr() 函数。](https://github.com/qianlongo/fe-handwriting/blob/master/38.str-str.js)
 
 ### 链表
 
