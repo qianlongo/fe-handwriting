@@ -30,6 +30,8 @@
 
 **2021-08-07** moveZeroes(移动零)、reverseString(反转字符串)、firstUniqChar（找到字符串中第一个不重复的值）、isAnagram（有效的字母异位词）
 
+**2021-08-08** myAtoi(字符串转数字)
+
 
 ## 基础篇
 
@@ -107,6 +109,8 @@
 5. [字符串中的第一个唯一字符](https://github.com/qianlongo/fe-handwriting/blob/master/34.first-uniq-char.js)
 
 5. [有效的字母异位词](https://github.com/qianlongo/fe-handwriting/blob/master/35.is-anagram.js)
+
+6. [有效的字母异位词](https://github.com/qianlongo/fe-handwriting/blob/master/36.my-atoi.js)
 
 ### 链表
 
