@@ -32,6 +32,8 @@
 
 **2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)、strStr() 函数、longestCommonPrefix(最长公共前缀)、compareVersion（比较版本号）
 
+**2021-08-11** search(二分查找)
+
 
 ## 基础篇
 
@@ -95,6 +97,8 @@
 7. [判断数组中是否有重复项](https://github.com/qianlongo/fe-handwriting/blob/master/31.contains-duplicate.js)
 
 7. [移动零](https://github.com/qianlongo/fe-handwriting/blob/master/32.move-zeroes.js)
+
+7. [二分查找](https://github.com/qianlongo/fe-handwriting/blob/master/41.hafl-search.js)
 
 
 

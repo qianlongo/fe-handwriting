@@ -22,10 +22,10 @@
 n 将在 [1, 10000]之间。
 nums 的每个元素都将在 [-9999, 9999]之间。
  */
-
+//  这个解答很详细
 const search = (nums, target) => {
   let i = 0
-  let j = nums.length
+  let j = nums.length - 1
   let midIndex = 0
 
   while (i <= j) {
