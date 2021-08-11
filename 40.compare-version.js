@@ -36,6 +36,28 @@ const compareVersion = function(version1, version2) {
   return 0
 }
 
+// 也可以不补零
+const compareVersion = function(version1, version2) {
+  version1 = version1.split('.')
+  version2 = version2.split('.')
+
+  const maxLen = Math.max(version1.length, version2.length)
+
+  for (let i = 0; i < maxLen; i++) {
+    const a = parseInt(version1[i]??0)
+    const b = parseInt(version2[i]??0)
+    if ( a === b) {
+      // i++
+    } else if (a > b) {
+      return 1
+    } else {
+      return -1
+    }
+  }
+
+  return 0
+}
+
 console.log(compareVersion('1.0', '1.0.0'))
 
 // 扩展1比较多个版本号
