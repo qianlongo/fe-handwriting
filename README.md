@@ -32,7 +32,7 @@
 
 **2021-08-08** myAtoi(字符串转数字)、reverseNum(反转数字)、strStr() 函数、longestCommonPrefix(最长公共前缀)、compareVersion（比较版本号）
 
-**2021-08-11** search(二分查找)
+**2021-08-11** search(二分查找)、searchInsert(搜索插入的位置)
 
 
 ## 基础篇
@@ -99,6 +99,8 @@
 7. [移动零](https://github.com/qianlongo/fe-handwriting/blob/master/32.move-zeroes.js)
 
 7. [二分查找](https://github.com/qianlongo/fe-handwriting/blob/master/41.hafl-search.js)
+
+7. [搜索插入位置](https://github.com/qianlongo/fe-handwriting/blob/master/42.search-insertjs)
 
 
 
