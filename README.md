@@ -96,11 +96,13 @@
 
 7. [判断数组中是否有重复项](https://github.com/qianlongo/fe-handwriting/blob/master/31.contains-duplicate.js)
 
-7. [移动零](https://github.com/qianlongo/fe-handwriting/blob/master/32.move-zeroes.js)
+8. [移动零](https://github.com/qianlongo/fe-handwriting/blob/master/32.move-zeroes.js)
 
-7. [二分查找](https://github.com/qianlongo/fe-handwriting/blob/master/41.hafl-search.js)
+9. [二分查找](https://github.com/qianlongo/fe-handwriting/blob/master/41.hafl-search.js)
 
-7. [搜索插入位置](https://github.com/qianlongo/fe-handwriting/blob/master/42.search-insertjs)
+10. [搜索插入位置](https://github.com/qianlongo/fe-handwriting/blob/master/42.search-insert.js)
+
+11. [724. 寻找数组的中心下标](https://github.com/qianlongo/fe-handwriting/blob/master/43.pivot-index.js)
 
 
 
