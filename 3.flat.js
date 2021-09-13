@@ -22,4 +22,28 @@ let arr2 = [
   [ 2, 3, 4 ],
   [ 5, [ 6, [ 7, [ 8 ] ] ] ]
 ]
+
 console.log(flat2(arr2))
+
+const flat3 = (arr) => {
+  const result = []
+  const stack = [ ...arr ]
+  
+  while (stack.length !== 0) {
+    const val = stack.pop()
+    if (Array.isArray(val)) {
+      stack.push(...val)
+    } else {
+      result.unshift(val)
+    }
+  }
+  return result
+}
+
+let arr3 = [
+  1,
+  [ 2, 3, 4 ],
+  [ 5, [ 6, [ 7, [ 8 ] ] ] ]
+]
+
+console.log(flat3(arr3))
