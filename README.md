@@ -71,6 +71,8 @@
 
 16. [千分位格式化数字](https://github.com/qianlongo/fe-handwriting/blob/master/27.formatPrice.js)
 
+17. [Object.create](https://github.com/qianlongo/fe-handwriting/blob/master/44.Object.create.js)
+
 
 
 ## 排序篇
