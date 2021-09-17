@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {*} obj 实例对象
+ * @param {*} func 构造函数
+ * @returns true false
+ */
 const instanceOf1 = (obj, func) => {
   if (obj === null || typeof obj !== 'object') {
     return false
@@ -13,7 +19,12 @@ const instanceOf1 = (obj, func) => {
     return instanceOf1(proto, func)
   }
 }
-
+/**
+ * 
+ * @param {*} obj 实例对象
+ * @param {*} func 构造函数
+ * @returns true false
+ */
 const instanceOf2 = (obj, func) => {
   if (obj === null || typeof obj !== 'object') {
     return false

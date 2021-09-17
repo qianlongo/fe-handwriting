@@ -17,17 +17,12 @@ Promise.myAll = (promises) => {
   })
 }
 
-const p1 = Promise.resolve(1)
-const p2 = new Promise((rs, rj) => {
-  setTimeout(() => {
-    Math.random() > 0.5 ? rs(2) : rj('error')
-  }, 2000)
-})
-const p3 = new Promise((rs, rj) => {
-  setTimeout(() => {
-    Math.random() > 0.5 ? rs(3) : rj('error')
-  }, 1000)
-})
+let p1 = Promise.resolve(1);
+let p2 = 2;
+let p3 = new Promise((resolve, reject) => {
+  setTimeout(resolve, 100, 3);
+});
+let p4 = Promise.reject('出错啦')
 
 
 Promise.myAll([ p1, p2, p3 ]).then((res) => {
@@ -36,7 +31,13 @@ Promise.myAll([ p1, p2, p3 ]).then((res) => {
   console.log('err', err)
 })
 
-Promise.myAll([ p1, p2, '---3' ]).then((res) => {
+Promise.myAll([ p1, p2, 3 ]).then((res) => {
+  console.log(res)
+}).catch((err) => {
+  console.log('err', err)
+})
+
+Promise.myAll([ p1, p2, p4 ]).then((res) => {
   console.log(res)
 }).catch((err) => {
   console.log('err', err)

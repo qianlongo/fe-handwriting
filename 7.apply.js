@@ -1,4 +1,9 @@
-// https://github.com/mqyqingfeng/Blog/issues/11
+/**
+ * 
+ * @param {*} ctx 函数执行上下文this
+ * @param {*} args  参数列表
+ * @returns 函数执行的结果
+ */
 Function.prototype.myApply = function (ctx, args) {
   if (!ctx) {
     ctx = typeof window !== 'undefined' ? window : global
@@ -17,8 +22,10 @@ Function.prototype.myApply = function (ctx, args) {
   return result
 }
 
-let fn = function (name) {
-  console.log(this, name)
+let fn = function (name, sex) {
+  console.log(this, name, sex)
 }
 
-fn.myApply('', 'qianlongo')
+
+fn.myApply('', ['前端胖头鱼', 'boy'])
+fn.myApply({ name: '前端胖头鱼', sex: 'boy' }, ['前端胖头鱼', 'boy'])

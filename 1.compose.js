@@ -23,6 +23,5 @@ function compose(...fn) {
 
     return result
   }, (it) => it)
-  
 }
 

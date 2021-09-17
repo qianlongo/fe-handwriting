@@ -1,4 +1,8 @@
-// 递归实现
+/**
+ * 
+ * @param {*} array 深层嵌套的数据
+ * @returns array 新数组
+ */
 const flat1 = (array) => {
   return array.reduce((result, it) => {
     return result.concat(Array.isArray(it) ? flat1(it) : it)
@@ -13,6 +17,11 @@ let arr1 = [
 console.log(flat1(arr1))
 
 // js原生的flat方法
+/**
+ * 
+ * @param {*} array 深层嵌套的数据
+ * @returns 新数组
+ */
 const flat2 = (array) => {
   return array.flat(Infinity)
 }
@@ -25,9 +34,9 @@ let arr2 = [
 
 console.log(flat2(arr2))
 
-const flat3 = (arr) => {
+const flat3 = (array) => {
   const result = []
-  const stack = [ ...arr ]
+  const stack = [ ...array ]
   
   while (stack.length !== 0) {
     const val = stack.pop()
