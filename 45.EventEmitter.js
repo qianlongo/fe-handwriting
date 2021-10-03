@@ -8,19 +8,16 @@ class EventEmitter {
       this.events[ evt ] = []
     }
     
-    this.events[ evt ].push({
-      callback,
-      ctx
-    })
+    this.events[ evt ].push(callback)
 
     return this
   }
   // 发布事件
   emit (evt, ...payload) {
-    const evtCallbacks = this.events[ evt ]
+    const callbacks = this.events[ evt ]
 
-    if (evtCallbacks) {
-      evtCallbacks.forEach((evtCallback) => evtCallback.callback.apply(evtCallback.ctx, payload))
+    if (callbacks) {
+      callbacks.forEach((cb) => cb.apply(this, payload))
     }
 
     return this
@@ -34,7 +31,7 @@ class EventEmitter {
     } else if (typeof evt === 'string') {
       // 删除指定事件的回调 
       if (typeof callback === 'function') {
-        this.events[ evt ] = this.events[ evt ].filter((evtCallback) => evtCallback.callback !== callback)
+        this.events[ evt ] = this.events[ evt ].filter((cb) => cb !== callback)
       } else {
         // 删除整个事件
         delete this.events[ evt ]
