@@ -1,27 +1,37 @@
 const jsonstringify = jsonStringify = (data) => {
   // 确认一个对象是否存在循环引用
-  const isObject = (obj) => typeof obj === 'object' && obj
-  const checkHasLoop = (obj, hash = new Map()) => {
-    if (isObject(obj)) {
-      hash.set(obj, obj)
+  const isCyclic = (obj) => {
+    let stackSet = new Set()
+    let detected = false
+
+    const detect = (obj) => {
+      if (obj && typeof obj != 'object') {
+        return
+      }
+
+      if (stackSet.has(obj)) {
+        return detected = true
+      }
+
+      stackSet.add(obj)
 
       for (let key in obj) {
-        const value = obj[ key ]
-        if (isObject(value)) {
-          if (hash.has(value) || checkHasLoop(value, hash)) {
-            return true  
-          }
+        if (obj.hasOwnProperty(key)) {
+          detect(obj[key])
         }
       }
 
-      return false
-    } else {
-      return false
+      stackSet.delete(obj)
     }
+
+    detect(obj)
+
+    return detected
   }
+
   // 特性七:
   // 对包含循环引用的对象（对象之间相互引用，形成无限循环）执行此方法，会抛出错误。
-  if (checkHasLoop(data)) {
+  if (isCyclic(data)) {
     throw new TypeError('Converting circular structure to JSON')
   }
 
@@ -32,17 +42,17 @@ const jsonstringify = jsonStringify = (data) => {
   }
 
   const type = typeof data
-  const commonKeys1 = [ 'undefined', 'function', 'symbol' ]
+  const commonKeys1 = ['undefined', 'function', 'symbol']
   const getType = (s) => {
     return Object.prototype.toString.call(s).replace(/\[object (.*?)\]/, '$1').toLowerCase()
   }
-   
+
   // 非对象
   if (type !== 'object' || data === null) {
     let result = data
     // 特性四：
     // NaN 和 Infinity 格式的数值及 null 都会被当做 null。
-    if ([ NaN, Infinity, null ].includes(data)) {
+    if ([NaN, Infinity, null].includes(data)) {
       result = 'null'
       // 特性一：
       // `undefined`、`任意的函数`以及`symbol值`被`单独转换`时，会返回 undefined
@@ -72,7 +82,7 @@ const jsonstringify = jsonStringify = (data) => {
     } else {
       // 特性二：
       // 布尔值、数字、字符串的包装对象在序列化过程中会自动转换成对应的原始值。
-      if ([ 'boolean', 'number', 'string' ].includes(getType(data))) {
+      if (['boolean', 'number'].includes(getType(data))) {
         return String(data)
       } else if (getType(data) === 'string') {
         return '"' + data + '"'
@@ -84,7 +94,7 @@ const jsonstringify = jsonStringify = (data) => {
           // 特性三:
           // 所有以symbol为属性键的属性都会被完全忽略掉，即便 replacer 参数中强制指定包含了它们。
           if (typeof key !== 'symbol') {
-            const value = data[ key ]
+            const value = data[key]
             // 特性一
             // `undefined`、`任意的函数`以及`symbol值`，出现在`非数组对象`的属性值中时在序列化过程中会被忽略
             if (!commonKeys1.includes(typeof value)) {
@@ -97,18 +107,17 @@ const jsonstringify = jsonStringify = (data) => {
       }
     }
   }
-  
 }
 
 console.log(jsonstringify(undefined))
-console.log(jsonstringify(() => {}))
+console.log(jsonstringify(() => { }))
 console.log(jsonstringify(Symbol('前端胖头鱼')))
 console.log(jsonstringify((NaN)))
 console.log(jsonstringify((Infinity)))
 console.log(jsonstringify((null)))
 console.log(jsonstringify({
   name: '前端胖头鱼',
-  toJSON () {
+  toJSON() {
     return {
       name: '前端胖头鱼2',
       sex: 'boy'
@@ -116,69 +125,56 @@ console.log(jsonstringify({
   }
 }))
 
-let nl = null;
-
-console.log(jsonStringify(nl) === JSON.stringify(nl));
+console.log(jsonstringify(null) === JSON.stringify(null));
 // true
-let und = undefined;
-console.log(jsonStringify(undefined) === JSON.stringify(undefined));
+console.log(jsonstringify(undefined) === JSON.stringify(undefined));
 // true
-let boo = false;
-console.log(jsonStringify(boo) === JSON.stringify(boo));
+console.log(jsonstringify(false) === JSON.stringify(false));
 // true
-let nan = NaN;
-console.log(jsonStringify(nan) === JSON.stringify(nan));
+console.log(jsonstringify(NaN) === JSON.stringify(NaN));
 // true
-let inf = Infinity;
-console.log(jsonStringify(Infinity) === JSON.stringify(Infinity));
+console.log(jsonstringify(Infinity) === JSON.stringify(Infinity));
 // true
-let str = "jack";
-console.log(jsonStringify(str) === JSON.stringify(str));
+let str = "前端胖头鱼";
+console.log(jsonstringify(str) === JSON.stringify(str));
 // true
 let reg = new RegExp("\w");
-console.log(jsonStringify(reg) === JSON.stringify(reg));
+console.log(jsonstringify(reg) === JSON.stringify(reg));
 // true
 let date = new Date();
-console.log(jsonStringify(date) === JSON.stringify(date));
+console.log(jsonstringify(date) === JSON.stringify(date));
 // true
-let sym = Symbol(1);
-console.log(jsonStringify(sym) === JSON.stringify(sym));
+let sym = Symbol('前端胖头鱼');
+console.log(jsonstringify(sym) === JSON.stringify(sym));
 // true
-let array = [1,2,3];
-console.log(jsonStringify(array) === JSON.stringify(array));
+let array = [1, 2, 3];
+console.log(jsonstringify(array) === JSON.stringify(array));
 // true
 let obj = {
-    name: 'jack',
-    age: 18,
-    attr: ['coding', 123],
-    date: new Date(),
-    uni: Symbol(2),
-    sayHi: function() {
-        console.log("hi")
-    },
-    info: {
-        sister: 'lily',
-        age: 16,
-        intro: {
-            money: undefined,
-            job: null
-        }
-    },
-    pakingObj: {
-      boolean: new Boolean(false),
-      string: new String('前端胖头鱼'),
-      number: new Number(1),
+  name: '前端胖头鱼',
+  age: 18,
+  attr: ['coding', 123],
+  date: new Date(),
+  uni: Symbol(2),
+  sayHi: function () {
+    console.log("hello world")
+  },
+  info: {
+    age: 16,
+    intro: {
+      money: undefined,
+      job: null
     }
+  },
+  pakingObj: {
+    boolean: new Boolean(false),
+    string: new String('前端胖头鱼'),
+    number: new Number(1),
+  }
 }
-console.log(jsonStringify(obj) === JSON.stringify(obj));
-console.log((jsonStringify(obj)))
+console.log(jsonstringify(obj) === JSON.stringify(obj));
+console.log((jsonstringify(obj)))
 console.log(JSON.stringify(obj))
-
-let obj1 = { a: 'aa' }
-let obj2 = { name: '前端胖头鱼', a: obj1, b: obj1 }
-// obj2.obj = obj2
-
-console.log(jsonStringify(obj2))
 
 let enumerableObj = {}
 
@@ -195,8 +191,15 @@ Object.defineProperties(enumerableObj, {
 
 console.log(jsonstringify(enumerableObj))
 
+let obj1 = { a: 'aa' }
+let obj2 = { name: '前端胖头鱼', a: obj1, b: obj1 }
+obj2.obj = obj2
+
+// console.log(jsonstringify(obj2))
+console.log(jsonStringify(BigInt(1)))
+
 // console.log(JSON.stringify(BigInt(1)))
-// console.log(jsonStringify(BigInt(1)))
+
 /*
 // 1. 转换对象
 console.log(JSON.stringify({ name: '前端胖头鱼', sex: 'boy' }))
