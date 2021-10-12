@@ -46,7 +46,6 @@
 
 22. [发布订阅](https://github.com/qianlongo/fe-handwriting/blob/master/45.EventEmitter.js)
 
-22. [Object.create](https://github.com/qianlongo/fe-handwriting/blob/master/44.Object.create.js)
 
 
 
