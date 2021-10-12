@@ -36,6 +36,20 @@
 
 17. [Object.create](https://github.com/qianlongo/fe-handwriting/blob/master/44.Object.create.js)
 
+18. [isCyclic判断循环引用](https://github.com/qianlongo/fe-handwriting/blob/master/51.js)
+
+19. [手写JSON.stringify](https://github.com/qianlongo/fe-handwriting/blob/master/50.JSON.stringify.js)
+
+20. [并行限制的Promise](https://github.com/qianlongo/fe-handwriting/blob/master/49.scheduler.js)
+
+21. [判断数据类型](https://github.com/qianlongo/fe-handwriting/blob/master/46.getType.js)
+
+22. [发布订阅](https://github.com/qianlongo/fe-handwriting/blob/master/45.EventEmitter.js)
+
+22. [Object.create](https://github.com/qianlongo/fe-handwriting/blob/master/44.Object.create.js)
+
+
+
 
 
 ## 排序篇
@@ -70,6 +84,8 @@
 10. [搜索插入位置](https://github.com/qianlongo/fe-handwriting/blob/master/42.search-insert.js)
 
 11. [724. 寻找数组的中心下标](https://github.com/qianlongo/fe-handwriting/blob/master/43.pivot-index.js)
+
+12. [LRU最近最少使用](https://github.com/qianlongo/fe-handwriting/blob/master/48.LRU2.js)
 
 
 
