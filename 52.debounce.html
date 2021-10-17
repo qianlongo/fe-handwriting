@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="input"/>
+    <script>
+      const $input = document.querySelector('#input')
+      // 防抖：可以和你的电脑设定了10分钟睡眠时间的场景结合起来理解
+      // 如果你一直在用电脑，那么电脑就不会睡眠（频繁的把前一个定时器关掉，开启新的定时器）
+      // 当你最后一次没操作电脑10分钟之后，电脑陷入睡眠
+      const debounce = function (func, delay) {
+        let timer = null
+
+        return function (...args) {
+          clearTimeout(timer)
+
+          timer = setTimeout(() => {
+            func.apply(this, args)
+          }, delay)
+        }
+      }
+
+      const showName = debounce(function (name) {
+        console.log($input.value, this, name)
+      }, 500)
+
+
+      $input.addEventListener('input', (e) => {
+        showName.call({ name: '前端胖头鱼' }, '前端胖头鱼')
+      })
+    </script>
+  </body>
+</html>
