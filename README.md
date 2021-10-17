@@ -50,6 +50,10 @@
 
 23. [throttle](https://github.com/qianlongo/fe-handwriting/blob/master/53.throttle.js)
 
+24. [bind](https://github.com/qianlongo/fe-handwriting/blob/master/55.bind.js)
+
+25. [bind](https://github.com/qianlongo/fe-handwriting/blob/master/54.curry.js)
+
 
 
 
