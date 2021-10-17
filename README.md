@@ -46,7 +46,9 @@
 
 22. [发布订阅](https://github.com/qianlongo/fe-handwriting/blob/master/45.EventEmitter.js)
 
+23. [debounce](https://github.com/qianlongo/fe-handwriting/blob/master/52.debounce.html)
 
+23. [throttle](https://github.com/qianlongo/fe-handwriting/blob/master/53.throttle.js)
 
 
 
