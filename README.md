@@ -64,6 +64,8 @@
 
 31. [sleep](https://github.com/qianlongo/fe-handwriting/blob/master/61.sleep.js)
 
+31. [sum](https://github.com/qianlongo/fe-handwriting/blob/master/63.sum.js)
+
 
 ## 排序篇
 
