@@ -48,11 +48,13 @@
 
 23. [debounce](https://github.com/qianlongo/fe-handwriting/blob/master/52.debounce.html)
 
-23. [throttle](https://github.com/qianlongo/fe-handwriting/blob/master/53.throttle.js)
+24. [throttle](https://github.com/qianlongo/fe-handwriting/blob/master/53.throttle.js)
 
-24. [bind](https://github.com/qianlongo/fe-handwriting/blob/master/55.bind.js)
+25. [bind](https://github.com/qianlongo/fe-handwriting/blob/master/55.bind.js)
 
-25. [bind](https://github.com/qianlongo/fe-handwriting/blob/master/54.curry.js)
+26. [curry](https://github.com/qianlongo/fe-handwriting/blob/master/54.curry.js)
+
+27. [templateRender](https://github.com/qianlongo/fe-handwriting/blob/master/56.templateRender.js)
 
 
 
