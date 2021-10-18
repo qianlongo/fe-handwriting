@@ -58,9 +58,9 @@
 
 28. [dom2json](https://github.com/qianlongo/fe-handwriting/blob/master/57.dom2json.html)
 
-29. [dom2json](https://github.com/qianlongo/fe-handwriting/blob/master/59.list2tree.js)
+29. [list2tree](https://github.com/qianlongo/fe-handwriting/blob/master/59.list2tree.js)
 
-
+30. [tree2list](https://github.com/qianlongo/fe-handwriting/blob/master/60.tree2list.js)
 
 
 ## 排序篇
