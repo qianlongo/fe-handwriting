@@ -62,6 +62,8 @@
 
 30. [tree2list](https://github.com/qianlongo/fe-handwriting/blob/master/60.tree2list.js)
 
+31. [sleep](https://github.com/qianlongo/fe-handwriting/blob/master/61.sleep.js)
+
 
 ## 排序篇
 
