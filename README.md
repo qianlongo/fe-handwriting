@@ -1,4 +1,6 @@
+也许你我素未谋面，但很可能相见恨晚。希望这里能成为你的栖息之地，我愿和你一起收获喜悦，奔赴成长。
 
+这里每年都会分享不少于`200+篇`精选优质好文，如果你想第一时间获取文章内容，可以前往[【公众号】](#公众号)，也可以加我[【微信】](#公众号)噢。
 
 ## 基础篇
 
@@ -121,7 +123,7 @@
 
 7. [整数反转](https://github.com/qianlongo/fe-handwriting/blob/master/37.reverse-num.js)
 
-8. [实现 strStr() 函数。](https://github.com/qianlongo/fe-handwriting/blob/master/38.str-str.js)
+8. [实现 strStr() 函数。](https://github.com/qianlongo/fe-handwriting/blob/m◊aster/38.str-str.js)
 9. [最长公共前缀](https://github.com/qianlongo/fe-handwriting/blob/master/39.longest-common-prefix.js)
 10. [比较版本号](https://github.com/qianlongo/fe-handwriting/blob/master/40.compare-version.js)
 
@@ -129,3 +131,10 @@
 
 1. [奇偶链表](https://github.com/qianlongo/fe-handwriting/blob/master/16.odd-even-linked-list.js)
 
+
+## 结尾
+
+  <a name="微信"></a>  <a name="公众号"></a>
+
+
+![](https://qianlongo-1300947007.cos.ap-nanjing.myqcloud.com/mp-weixin/wx.png)
