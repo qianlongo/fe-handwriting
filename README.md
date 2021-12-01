@@ -137,4 +137,4 @@
   <a name="微信"></a>  <a name="公众号"></a>
 
 
-![](https://qianlongo-1300947007.cos.ap-nanjing.myqcloud.com/mp-weixin/wx.png)
+![](./imgs/wx.png)
