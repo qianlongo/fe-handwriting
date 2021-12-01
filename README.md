@@ -1,6 +1,16 @@
+## 谢谢你来啦
+
 也许你我素未谋面，但很可能相见恨晚。希望这里能成为你的栖息之地，我愿和你一起收获喜悦，奔赴成长。
 
 这里每年都会分享不少于`200+篇`精选优质好文，如果你想第一时间获取文章内容，可以前往[【公众号】](#公众号)，也可以加我[【微信】](#公众号)噢。
+
+<p align="center">
+  <a href="#公众号"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
+  <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-前端胖头鱼-blue.svg" alt="公众号"></a>
+  <a href="https://juejin.cn/user/3438928099549352"><img src="https://img.shields.io/badge/juejin-掘金-blue.svg" alt="公众号"></a>
+  <a href="https://segmentfault.com/u/116263"><img src="https://img.shields.io/badge/sg-sg-blue.svg" alt="公众号"></a>
+  <a href="https://www.zhihu.com/people/qian-duan-pang-tou-yu"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="投稿"></a>
+ </p>
 
 ## 基础篇
 
