@@ -4,6 +4,10 @@ Promise.myAll = (promises) => {
     let result = []
     const len = promises.length
 
+    if (len === 0) {
+      return resolve([])
+    }
+
     promises.forEach((p, i) => {
       Promise.resolve(p).then((res) => {
         count += 1

@@ -13,40 +13,72 @@ Promise.myAllSettled = (promises) => {
     }
 
     const response = (i, value) => {
-      try {
-        if (value instanceof Promise) {
-          // 注意此val非value
-          value.then((val) => {
-            response(i, val)
-          }, (err) => {
-            result[i] = { 
-              status: 'rejected', 
-              reason: err 
-            }
+      if (value instanceof Promise) {
+        // 注意此val非value
+        value.then((val) => {
+          response(i, val)
+        }, (err) => {
+          result[i] = { 
+            status: 'rejected', 
+            reason: err 
+          }
 
-            if (--remaining === 0){
-              resolve(result)
-            }
-          })
-          return
-        }
+          if (--remaining === 0){
+            resolve(result)
+          }
+        })
+        return
+      }
 
-        result[ i ] = {
-          status: 'fulfilled',
-          value
-        }
+      result[ i ] = {
+        status: 'fulfilled',
+        value
+      }
 
-        if (--remaining === 0) {
-          resolve(result)
-        }
-      } catch (err) {
-        reject(err)
+      if (--remaining === 0) {
+        resolve(result)
       }
     }
 
     for (let i = 0; i < length; i++) {
       response(i, promises[i])
     }
+  })
+}
+
+Promise.myAllSettled2 = (promises) => {
+  return new Promise((rs, rj) => {
+    let count = 0
+    let result = []
+    const len = promises.length
+
+    if (len === 0) {
+      return resolve([])
+    }
+
+    promises.forEach((p, i) => {
+      Promise.resolve(p).then((res) => {
+        count += 1
+        result[ i ] = {
+          status: 'fulfilled',
+          value: res
+        }
+        
+        if (count === len) {
+          rs(result)
+        }
+      }).catch((err) => {
+        count += 1
+        result[i] = { 
+          status: 'rejected', 
+          reason: err 
+        }
+
+        if (count === len) {
+          rs(result)
+        }
+      })
+    })
   })
 }
 
