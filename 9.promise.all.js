@@ -26,19 +26,19 @@ let p4 = Promise.reject('出错啦')
 
 
 Promise.myAll([ p1, p2, p3 ]).then((res) => {
-  console.log(res)
+  console.log(res, 'res---1')
 }).catch((err) => {
   console.log('err', err)
 })
 
 Promise.myAll([ p1, p2, 3 ]).then((res) => {
-  console.log(res)
+  console.log(res, 'res---2')
 }).catch((err) => {
   console.log('err', err)
 })
 
 Promise.myAll([ p1, p2, p4 ]).then((res) => {
-  console.log(res)
+  console.log(res, 'res--3')
 }).catch((err) => {
   console.log('err', err)
 })
