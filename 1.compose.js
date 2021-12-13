@@ -17,11 +17,8 @@ console.log(a(1)); // 1+4+3+2+1=11
 
 function compose(...fn) {
   return fn.reduce((result, it) => {
-    result = (...args) => {
-      return result(it(args))
+    return (...args) => {
+      return result(it(...args))
     }
-
-    return result
   }, (it) => it)
 }
-
