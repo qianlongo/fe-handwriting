@@ -12,6 +12,11 @@
   <a href="https://www.zhihu.com/people/qian-duan-pang-tou-yu"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="投稿"></a>
  </p>
 
+## 文章详解
+1. [就因为JSON.stringify，我的年终奖差点打水漂了](https://mp.weixin.qq.com/s/5Ik0LXw5MOhVACWpegDCxA)
+
+2. [因为实现不了Promise.all，一场面试凉凉了](https://mp.weixin.qq.com/s/-YlCc-AsQ19sTHtsMyG-3g)
+
 ## 基础篇
 
 1. [compose](https://github.com/qianlongo/fe-handwriting/blob/master/1.compose.js)
