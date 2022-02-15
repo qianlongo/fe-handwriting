@@ -54,9 +54,9 @@ const isValid = (s) => {
   const stack = []
 
   for (let i = 0, len = s.length; i < len; i++) {
-    const ch = s[ i ]
+    const ch = s[i]
     // 左括号
-    if (leftToRight[ ch ]) {
+    if (leftToRight[ch]) {
       stack.push(ch)
     } else {
       // 右括号开始匹配
@@ -71,3 +71,20 @@ const isValid = (s) => {
   // 最后检查栈内还有没有元素，有说明还有未匹配则不符合
   return !stack.length
 }
+
+const isValid2 = (s) => {
+  while (true) {
+    let l = s.length
+    
+    s = s.replace(/\{\}|\[\]|\(\)/, "")
+
+    if (s.length == l) {
+      return l === 0
+    }
+  }
+}
+
+// ({}})
+// (})
+
+console.log(isValid2('({[]})'))
