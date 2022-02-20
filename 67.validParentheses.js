@@ -55,9 +55,10 @@ const isValid = (s) => {
 
   for (let i = 0, len = s.length; i < len; i++) {
     const ch = s[i]
+    const metchCh = leftToRight[ ch ]
     // 左括号
-    if (leftToRight[ch]) {
-      stack.push(ch)
+    if (metchCh) {
+      stack.push(metchCh)
     } else {
       // 右括号开始匹配
       // 1. 如果栈内没有左括号，直接false
@@ -74,12 +75,12 @@ const isValid = (s) => {
 
 const isValid2 = (s) => {
   while (true) {
-    let l = s.length
+    let len = s.length
     
-    s = s.replace(/\{\}|\[\]|\(\)/, "")
+    s = s.replace('{}', '').replace('[]', '').replace('()', '')
 
-    if (s.length == l) {
-      return l === 0
+    if (s.length == len) {
+      return len === 0
     }
   }
 }
@@ -87,4 +88,4 @@ const isValid2 = (s) => {
 // ({}})
 // (})
 
-console.log(isValid2('({[]})'))
+console.log(isValid('({[]})'))
