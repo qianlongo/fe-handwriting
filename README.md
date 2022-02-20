@@ -120,6 +120,7 @@
 12. [LRU最近最少使用](https://github.com/qianlongo/fe-handwriting/blob/master/48.LRU2.js)
 
 13. [菲波那切数列](https://github.com/qianlongo/fe-handwriting/blob/master/62.fib.js)
+14. [有效的括号](https://github.com/qianlongo/fe-handwriting/blob/master/67.validParentheses.js)
 
 
 ### 字符串
