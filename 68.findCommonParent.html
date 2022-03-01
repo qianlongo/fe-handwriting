@@ -12,14 +12,32 @@
     <script>
       // 设计一个函数，传入两个 DOM 节点，找出它们的最近的父节点
 
-      function findCommonParent($el1, $el2) {
-        if ($el1.contains($el2)) {
-          return $el1
-        } else if ($el2.contains($el1)) {
-          return $el2
+      // function findCommonParent($el1, $el2) {
+      //   if ($el1.contains($el2)) {
+      //     return $el1
+      //   } else if ($el2.contains($el1)) {
+      //     return $el2
+      //   } else {
+      //     return findCommonParent($el1.parentNode, $el2)
+      //   }
+      // }
+
+      function findCommonParent2(oNode1, oNode2) {
+        if (oNode1.contains(oNode2)) {
+          return oNode1
+        } else if (oNode2.contains(oNode1)) {
+          return oNode2
         } else {
-          return findCommonParent($el1.parentNode, $el2)
+          return findCommonParent(oNode1.parentNode, oNode2)
         }
+      }
+
+      function findCommonParent (oNode1, oNode2) {
+        while (!oNode1.contains(oNode2)) {
+          oNode1 = oNode1.parentNode 
+        }
+
+        return oNode1
       }
       
       const $el1 = document.querySelector('.el1')
