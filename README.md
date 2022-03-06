@@ -81,7 +81,16 @@
 
 31. [sleep](https://github.com/qianlongo/fe-handwriting/blob/master/61.sleep.js)
 
-31. [sum](https://github.com/qianlongo/fe-handwriting/blob/master/63.sum.js)
+32. [sum](https://github.com/qianlongo/fe-handwriting/blob/master/63.sum.js)
+
+33. [findCommonParent](https://github.com/qianlongo/fe-handwriting/blob/master/68.findCommonParent.html)
+
+34. [expireStorage](https://github.com/qianlongo/fe-handwriting/blob/master/69.expireStorage.js)
+
+35. [reduceMap](https://github.com/qianlongo/fe-handwriting/blob/master/70.reduceMap.js)
+
+36. [firstPromise](https://github.com/qianlongo/fe-handwriting/blob/master/71.firstPromise.js)
+
 
 
 ## 排序篇
@@ -121,6 +130,7 @@
 
 13. [菲波那切数列](https://github.com/qianlongo/fe-handwriting/blob/master/62.fib.js)
 14. [有效的括号](https://github.com/qianlongo/fe-handwriting/blob/master/67.validParentheses.js)
+
 
 
 ### 字符串
