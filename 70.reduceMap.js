@@ -12,6 +12,6 @@ let arr = [ 1, 2 ]
 let arr2 = arr.map2(function (it, i, array) {
   console.log(it, i, array, this)
   return it * 2
-}, { name: '前端胖头鱼' })
+}, { name: 'fatfish' })
 
 console.log(arr2) 
