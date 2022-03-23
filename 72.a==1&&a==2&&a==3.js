@@ -34,11 +34,19 @@
 
   console.log(a == 1 && a == 2 && a == 3)
 })()
-// 方式4：利用数组和toString方法
+// 方式4：利用数组和join方法
 ;(() => {
   let a = [ 1, 2, 3 ]
   
-  a.toString = a.shift
+  a.join = a.shift
 
   console.log(a == 1 && a == 2 && a == 3)
+})()
+// 方式5：利用隐藏字段
+;(() => {
+  let aﾠ = 1
+  let a = 2
+  let ﾠa = 3
+
+  console.log(aﾠ == 1 && a == 2 && ﾠa == 3)
 })()
