@@ -50,3 +50,16 @@
 
   console.log(aﾠ == 1 && a == 2 && ﾠa == 3)
 })()
+
+// 方式6：利用with
+;(() => {
+  let i = 1
+
+  with ({
+    get a () {
+      return i++
+    }
+  }) {
+    console.log(a == 1 && a == 2 && a == 3)
+  }
+})()
